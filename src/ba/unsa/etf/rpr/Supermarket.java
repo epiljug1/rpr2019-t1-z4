@@ -14,7 +14,7 @@ public class Supermarket {
     public Artikl[] getArtikli() {
         return artikli.toArray(new Artikl[0]);
     }
-
+/*
     public Artikl izbaciArtklSaKodom(String kod){
         Artikl novi = null;
         for(int i=0;i<artikli.size();i++)
@@ -24,7 +24,7 @@ public class Supermarket {
         artikli.remove(novi);
         return novi;
     }
-
+*/
     public void dodajArtikl(Artikl novi){
 
         artikli.add(novi);
@@ -39,7 +39,8 @@ public class Supermarket {
             if(artikli.get(i).getKod().equals(kod))
                 novi = artikli.get(i);
 
-        artikli.remove(novi);
+       // if(artikli.size())
+            artikli.remove(novi);
         return  novi;
     }
 }

@@ -10,6 +10,10 @@ public class Artikl {
         this.cijena = cijena;
     }
 
+    @Override
+    public String toString() {
+        return  naziv +" "+ kod + " "+cijena;
+    }
 
     String getNaziv() {
         return naziv;
